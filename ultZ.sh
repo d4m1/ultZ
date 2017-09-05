@@ -61,25 +61,7 @@ if [ "$1" = "aptr" ]
 then
     sudo apt remove $2
 fi
-if [ "$1" = "gpa" ]
+if [ "$1" = "list" ]
 then
-    git add --all
-    git commit -am $2
-    if [ $3 = "" ]
-    then
-	git push
-    else
-	git push $3 $4
-    fi
-fi
-if [ "$1" = "gp" ]
-then
-    git add $2
-    git commit -m $3
-    if [ $4 = "" ]
-    then
-	git push
-    else
-	git push $5 $6
-    fi
+cat /home/z/ultZ/ultZ.sh
 fi
